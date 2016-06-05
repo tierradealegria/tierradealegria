@@ -12,6 +12,13 @@
     {% endif %}
     {% endif %}
     {% endfor %}
+    {% if site.active_lang == site.default_lang %}
+      {% assign url_for_lang = site.baseurl | prepend: site.url %}
+    {% else %}
+      {% assign url_for_lang = site.active_lang | prepend: '/' | prepend: site.url %}
+    {% endif %}
+    <li><a href="{{ "/feed.xml" | prepend: url_for_lang }}"
+                   class="icon fa-feed"><span class="label">RSS</span></a></li>
   </ul>
   <ul class="copyright">
     <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
@@ -22,6 +29,5 @@
     {{ thisyear }}
     {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
     <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-    <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
   </ul>
 </footer>

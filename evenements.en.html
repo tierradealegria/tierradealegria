@@ -1,0 +1,19 @@
+---
+layout: page
+permalink: /evenements.html
+title: Events
+menuorder: 7
+lang: en
+---
+
+{% for post in site.posts %}
+
+<div>
+  {{ post.date | date: "%b %-d, %Y" }}
+    »
+  <span>
+    <a href="{{ site.path }}{{ post.url }}">{{ post.title }}</a>
+  </span>
+</div>
+
+{% endfor %}

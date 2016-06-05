@@ -6,17 +6,30 @@
       <li class="special">
         <a href="#menu" class="menuToggle"><span>Menu</span></a>
         <div id="menu">
+          {% for lang in site.languages %}
+            {% if lang == site.default_lang %}
+              {% assign base_url_for_lang = site.baseurl %}
+            {% else %}
+              {% assign base_url_for_lang = lang | prepend: '/' | prepend: site.baseurl %}
+            {% endif %}
+            {% if lang == site.active_lang %}
+            <img src="/images/{{ lang }}.png" alt="{{ lang | upcase }}"/> {{ lang | upcase }}
+            {% else %}
+            <a href="{{ page.url | prepend: base_url_for_lang | prepend: site.url }}"><img src="/images/{{ lang }}.png" alt="{{ lang | upcase }}"/> {{ lang | upcase }}</a>
+            {% endif %}
+            {% if forloop.last != true %}
+            |
+            {% endif%}
+          {% endfor %}
+          <br/>
+          <br/>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            {% assign menu_pages = site.pages | sort:"menuorder" %}
+            {% for page in menu_pages %}
+            {% if page.title %}
+            <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
             {% endif %}
             {% endfor %}
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"
-                   class="icon fa-feed"> RSS Feed</a></li>
           </ul>
         </div>
       </li>

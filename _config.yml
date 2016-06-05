@@ -2,26 +2,24 @@
 #
 
 # Site settings
-title: Spectral
+title: "Rolando Salsa & Orquesta"
 description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
+  Site web de Rolando Salsa & Orquesta
+owner: "Rolando Salsa & Orquesta"
 first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+email: contact@rolandosalsa.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://rolandosalsa.com" # the base hostname & protocol for your site
 social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
+  twitter: https://twitter.com/orquestarolando
+  #github: https://github.com/<username>
+  #linkedin-square: https://linkedin.com/in/<username>
+  facebook-official: https://www.facebook.com/Rolando-Salsa-Orquesta-605765546193608/
+  #google-plus-square: https://plus.google.com/u/0/+<username>
+  email: "mailto:contact@rolandosalsa.com"
   #flickr:
   #instagram:
-  #youtube-square:
+  youtube-square: https://www.youtube.com/channel/UCQDWbuvv5mvkLv55Qsak-ig
   #spotify:
   #stack-overflow:
   #vimeo:
@@ -57,3 +55,16 @@ social:
 markdown: kramdown
 #sass:
 #  style: compressed
+
+gems:
+  - jekyll-polyglot
+languages: ["fr", "en", "es"]
+default_lang: "fr"
+exclude_from_localization: ["audio", "css", "fonts", "images", "js"]
+parallel_localization: true
+
+exclude:
+  - upload.sh
+  - login.sh
+  - LICENSE.txt
+  - README.txt
