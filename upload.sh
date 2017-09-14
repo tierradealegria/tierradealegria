@@ -1,6 +1,6 @@
 #!/bin/sh
 
-JEKYLL=/usr/bin/jekyll
+JEKYLL=jekyll
 LFTP=lftp
 
 localDirectory="`pwd`/_site"

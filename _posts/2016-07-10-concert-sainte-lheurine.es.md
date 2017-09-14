@@ -20,10 +20,6 @@ o la famosa
 También dimos un concierto con varias canciones de salsa, cumbia
 o bachata para el más grande placer de los amantes de la música latina.
 
-<div class="image left">
-   <iframe src="https://www.youtube.com/embed/NPC2c6B6eug" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-</div>
-
 Gracias a los [profesores](http://www.zumbaalldances.com/zumba.php?p=professeurs) Aloïs, Jennifer, Zakary, Stephanie y a todos
 los benévolos para la organización maravillosa. También se agradece a todos
 los participantes por el ambiente increíble! Puede encontrar las

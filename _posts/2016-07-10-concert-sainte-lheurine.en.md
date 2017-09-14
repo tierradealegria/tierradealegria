@@ -21,10 +21,6 @@ or the famous
 We also played a Latino concert with various songs from salsa, cumbia
 or bachata for the greatest pleasure of lovers of latin music.
 
-<div class="image left">
-   <iframe src="https://www.youtube.com/embed/NPC2c6B6eug" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-</div>
-
 A big thank to the [teachers](http://www.zumbaalldances.com/zumba.php?p=professeurs) Aloïs, Jennifer, Zakary, Stéphanie and all the volunteers
 for the wonderful organization. We also thank all the participants for the
 awesome ambiance !

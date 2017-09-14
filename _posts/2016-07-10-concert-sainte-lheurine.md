@@ -19,10 +19,6 @@ ou encore la célèbre
 Nous avons aussi joué un concert latino avec divers morceaux de salsa, cumbia
 ou bachata pour le plus grand plaisir des amateurs de musique latine.
 
-<div class="image left">
-   <iframe src="https://www.youtube.com/embed/NPC2c6B6eug" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-</div>
-
 Un grand merci aux [professeurs](http://www.zumbaalldances.com/zumba.php?p=professeurs) Aloïs, Jennifer, Zakary, Stéphanie et à tous les bénévoles pour
 la magnifique organisation. Nous remercions aussi tous les participants pour
 la superbe ambiance !
