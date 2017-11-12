@@ -9,7 +9,7 @@ owner: "Rolando Salsa & Orquesta"
 first_published: 2016 # if migrating another site, the year of your first publish
 email: contact@rolandosalsa.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://rolandosalsa.com" # the base hostname & protocol for your site
+path: "http://rolandosalsa.com" # the base hostname & protocol for your site
 social:
   email: "mailto:contact@rolandosalsa.com"
   facebook-official: https://www.facebook.com/Rolando-Salsa-Orquesta-605765546193608/
@@ -56,7 +56,7 @@ markdown: kramdown
 #sass:
 #  style: compressed
 
-gems:
+plugins:
   - jekyll-polyglot
 languages: ["fr", "en", "es"]
 default_lang: "fr"

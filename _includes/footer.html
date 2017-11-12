@@ -13,9 +13,9 @@
     {% endif %}
     {% endfor %}
     {% if site.active_lang == site.default_lang %}
-      {% assign url_for_lang = site.baseurl | prepend: site.url %}
+      {% assign url_for_lang = site.baseurl | prepend: site.path %}
     {% else %}
-      {% assign url_for_lang = site.active_lang | prepend: '/' | prepend: site.url %}
+      {% assign url_for_lang = site.active_lang | prepend: '/' | prepend: site.path %}
     {% endif %}
     <li><a href="{{ "/feed.xml" | prepend: url_for_lang }}"
                    class="icon fa-feed"><span class="label">RSS</span></a></li>

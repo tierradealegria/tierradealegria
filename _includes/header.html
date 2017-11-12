@@ -15,7 +15,7 @@
             {% if lang == site.active_lang %}
             <img src="/images/{{ lang }}.png" alt="{{ lang | upcase }}"/> {{ lang | upcase }}
             {% else %}
-            <a href="{{ page.url | prepend: base_url_for_lang | prepend: site.url }}"><img src="/images/{{ lang }}.png" alt="{{ lang | upcase }}"/> {{ lang | upcase }}</a>
+            <a href="{{ page.url | prepend: base_url_for_lang | prepend: site.path }}"><img src="/images/{{ lang }}.png" alt="{{ lang | upcase }}"/> {{ lang | upcase }}</a>
             {% endif %}
             {% if forloop.last != true %}
             |
