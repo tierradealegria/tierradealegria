@@ -732,8 +732,12 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	table {
+        border: 1px solid #ccc;
 		margin: 0 0 _size(element-margin) 0;
 		width: 100%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
 
 		tbody {
 			tr {
@@ -746,6 +750,10 @@ $baseurl: '{{ site.baseurl }}/images';
 				}
 			}
 		}
+        
+        th, td {
+            border: 1px solid #ccc;
+        }
 
 		td {
 			padding: 0.75em 0.75em;

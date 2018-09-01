@@ -2,21 +2,21 @@
 #
 
 # Site settings
-title: "Rolando Salsa & Orquesta"
+title: "Tierra De Alegria"
 description: |
-  Site web de Rolando Salsa & Orquesta
-owner: "Rolando Salsa & Orquesta"
+  Site web de Tierra De Alegria
+owner: "Tierra De Alegria"
 first_published: 2016 # if migrating another site, the year of your first publish
-email: contact@rolandosalsa.com
+email: contact@tierradealegria.com
 baseurl: "" # the subpath of your site, e.g. /blog
-path: "http://rolandosalsa.com" # the base hostname & protocol for your site
+path: "http://tierradealegria.com" # the base hostname & protocol for your site
 social:
-  email: "mailto:contact@rolandosalsa.com"
-  facebook-official: https://www.facebook.com/Rolando-Salsa-Orquesta-605765546193608/
+  email: "mailto:contact@tierradealegria.com"
+  facebook-official: https://fb.me/tierra.alegria.fr
   youtube-square: https://www.youtube.com/channel/UCQDWbuvv5mvkLv55Qsak-ig
-  soundcloud: https://soundcloud.com/rolando-salsa-orquesta/
-  instagram: https://www.instagram.com/rolando_salsa/
-  twitter: https://twitter.com/orquestarolando
+  #soundcloud: https://soundcloud.com/rolando-salsa-orquesta/
+  #instagram: https://www.instagram.com/rolando_salsa/
+  #twitter: https://twitter.com/orquestarolando
   #github: https://github.com/<username>
   #linkedin-square: https://linkedin.com/in/<username>
   #google-plus-square: https://plus.google.com/u/0/+<username>
@@ -58,7 +58,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-polyglot
-languages: ["fr", "en", "es"]
+languages: ["fr"]
 default_lang: "fr"
 exclude_from_localization: ["audio", "css", "fonts", "images", "js"]
 parallel_localization: true
