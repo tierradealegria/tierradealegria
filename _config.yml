@@ -56,13 +56,6 @@ markdown: kramdown
 #sass:
 #  style: compressed
 
-plugins:
-  - jekyll-polyglot
-languages: ["fr"]
-default_lang: "fr"
-exclude_from_localization: ["audio", "css", "fonts", "images", "js"]
-parallel_localization: true
-
 exclude:
   - upload.sh
   - login.sh

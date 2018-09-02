@@ -6,23 +6,6 @@
       <li class="special">
         <a href="#menu" class="menuToggle"><span>Menu</span></a>
         <div id="menu">
-          {% for lang in site.languages %}
-            {% if lang == site.default_lang %}
-              {% assign base_url_for_lang = site.baseurl %}
-            {% else %}
-              {% assign base_url_for_lang = lang | prepend: '/' | prepend: site.baseurl %}
-            {% endif %}
-            {% if lang == site.active_lang %}
-            <img src="/images/{{ lang }}.png" alt="{{ lang | upcase }}"/> {{ lang | upcase }}
-            {% else %}
-            <a href="{{ page.url | prepend: base_url_for_lang | prepend: site.path }}"><img src="/images/{{ lang }}.png" alt="{{ lang | upcase }}"/> {{ lang | upcase }}</a>
-            {% endif %}
-            {% if forloop.last != true %}
-            |
-            {% endif%}
-          {% endfor %}
-          <br/>
-          <br/>
           <ul>
             {% assign menu_pages = site.pages | sort:"menuorder" %}
             {% for page in menu_pages %}
