@@ -12,7 +12,7 @@ menuorder: 1
   <a href="#actualites" class="more scrolly">Actualités</a>
 </section>
 
-{% for post in site.posts limit:10 %}
+{% for post in site.posts limit:1 %}
 <section class="wrapper style1 special" style="padding: 1em">
   {% if forloop.index == 1 %}
   <div id="actualites"></div>
